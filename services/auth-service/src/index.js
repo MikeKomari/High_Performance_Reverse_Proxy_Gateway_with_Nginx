@@ -9,7 +9,7 @@ const VERSION = process.env.SERVICE_VERSION || "blue";
 app.use(cors());
 app.use(express.json());
 
-app.get("/health", (req, res) => {
+app.get("/api/v1/auth/health", (req, res) => {
 	res.json({ status: "ok", service: "auth", version: VERSION });
 });
 

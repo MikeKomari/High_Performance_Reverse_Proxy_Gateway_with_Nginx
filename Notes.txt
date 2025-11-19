@@ -1,0 +1,5 @@
+Run Blue-Green Deployment:
+  docker compose exec nginx sh -c "./scripts/deploy_blue_green.sh green"
+
+Fix some only not all:
+  docker exec nginx-container-name nginx -s reload
